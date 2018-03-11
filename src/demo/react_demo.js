@@ -1,7 +1,7 @@
 import React, { Component } from 'react'; 
 import { connect } from 'react-redux';  //官方的connect
 
-import { addNum, removeNum } from './redux/redux-reducer.js';
+import { addNum, removeNum } from '../redux/redux-reducer.js';
 
 class Demo extends Component {
     constructor(...args){

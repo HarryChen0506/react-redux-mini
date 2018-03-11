@@ -1,7 +1,7 @@
 // 自己实现的 redux 
 
 export function createStore(reducer){
-    let curState = {};  //闭包 state
+    let curState = undefined;  //闭包 state
     let listenerList = []; //监听函数集合
 
     function getState(){  //获取state

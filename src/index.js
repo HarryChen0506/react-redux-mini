@@ -8,17 +8,18 @@ import registerServiceWorker from './registerServiceWorker';
 
 import { Provider } from 'react-redux'  //官方的Provider
 
-import Demo from './react_demo.js';
+import Demo from './demo/react_demo.js';
+import Page from './demo/context.js'
 
  //测试js
-// import './redux/redux-demo.js'
+// import './demo/redux-demo.js'
 
 import store from './redux/redux-store.js';
 
 function render(){
      ReactDOM.render(
         <Provider store = {store}>
-            <Demo />
+            <Page />
         </Provider>, 
         document.getElementById('root'));
 }

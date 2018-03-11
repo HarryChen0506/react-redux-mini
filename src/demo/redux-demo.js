@@ -1,5 +1,5 @@
-import store from './redux-store.js';
-import { addNum, removeNum } from './redux-reducer.js'
+import store from '../redux/redux-store.js';
+import { addNum, removeNum } from '../redux/redux-reducer.js'
 
 // console.log('store', store);
 

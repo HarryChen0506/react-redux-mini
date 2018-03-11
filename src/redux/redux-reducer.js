@@ -17,12 +17,13 @@ const initState = {
     count: 10
 }
 export function reducer(state = initState, action){
+    console.log('state', state)
     switch(action.type){
         case ADDNUM:
             return {...state, count:state.count+1 }
         case REMOVENUM:
             return {...state, count:state.count-1 }
         default:           
-            return initState
+            return state
     }
 }
