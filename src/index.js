@@ -6,7 +6,8 @@ import registerServiceWorker from './registerServiceWorker';
 // ReactDOM.render(<App />, document.getElementById('root'));
 // registerServiceWorker();
 
-import { Provider } from 'react-redux'  //官方的Provider
+// import { Provider } from 'react-redux'  //官方的Provider
+import { Provider } from './redux_mini/react-redux-mini.js'  //官方的Provider
 
 import Demo from './demo/react_demo.js';
 import Page from './demo/context.js'
@@ -19,7 +20,7 @@ import store from './redux/redux-store.js';
 function render(){
      ReactDOM.render(
         <Provider store = {store}>
-            <Page />
+            <Demo />
         </Provider>, 
         document.getElementById('root'));
 }

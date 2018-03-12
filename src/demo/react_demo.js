@@ -1,5 +1,6 @@
 import React, { Component } from 'react'; 
-import { connect } from 'react-redux';  //官方的connect
+// import { connect } from 'react-redux';  //官方的connect  connet的作用 子组件从context里获取store对象， 并将属性（state, dispatch）传递到子组件内
+import { connect } from '../redux_mini/react-redux-mini.js';  //自己的connect
 
 import { addNum, removeNum } from '../redux/redux-reducer.js';
 
@@ -8,8 +9,7 @@ class Demo extends Component {
         super(...args);
         // this.state = {
         //     count: 10
-        // }
-       
+        // }  
     }
     addNum(){
         // this.setState({
