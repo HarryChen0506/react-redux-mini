@@ -7,12 +7,20 @@ export function createStore(reducer){
     function getState(){  //获取state
          return curState
     }
-    function  dispatch(action){     //发布接口 参数为信号action      
+    function  dispatch(action){     //发布接口 参数为信号action   
+
+        // if( typeof action ==='function'){
+        //     console.log('function')
+        //     action()
+        //     return 
+        // }
+
         curState = reducer(curState, action);
         listenerList.forEach(function(v, i){  //触发监听
             v()
         })
         return action
+             
     }
     function subscribe(fn){   //订阅监听函数
         listenerList.push(fn)
