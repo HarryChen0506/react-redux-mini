@@ -1,0 +1,12 @@
+.tab .tab-nav .active {
+    color: red
+}
+.tab .tab-nav .disabled {
+    color: gray
+}
+.tab .tab-panel li{
+    display: none
+}
+.tab .tab-panel li.active{
+    display: block
+}
